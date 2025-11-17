@@ -78,7 +78,7 @@
         flavor = "tap-preferred";
         tapping-term-ms = <200>;
 
-        bindings = <&kp A>, <&kp LSFT>;
+        bindings = <&kp A &kp LSFT>;
     };
 
     hold_semicolon: hold_semicolon {
@@ -89,7 +89,7 @@
         flavor = "tap-preferred";
         tapping-term-ms = <200>;
 
-        bindings = <&kp SEMI>, <&kp LSFT>;
+        bindings = <&kp SEMI &kp LSFT>;
     };
 
     hold_s: hold_s {
@@ -100,7 +100,7 @@
         flavor = "tap-preferred";
         tapping-term-ms = <200>;
 
-        bindings = <&kp S>, <&kp LALT>;
+        bindings = <&kp S &kp LALT>;
     };
 
     hold_l: hold_l {
@@ -111,7 +111,7 @@
         flavor = "tap-preferred";
         tapping-term-ms = <200>;
 
-        bindings = <&kp L>, <&kp LALT>;
+        bindings = <&kp L &kp LALT>;
     };
 };
 
