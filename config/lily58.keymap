@@ -70,51 +70,42 @@
     };
 
     behaviors {
-    hold_a: hold_a {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_A";
+        hold_a: hold_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_A";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp A &kp LSFT>;
+        };
 
-        #binding-cells = <0>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
+        hold_semicolon: hold_semicolon {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_SEMICOLON";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMI &kp LSFT>;
+        };
 
-        bindings = <&kp A &kp LSFT>;
+        hold_s: hold_s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_S";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp S &kp LALT>;
+        };
+
+        hold_l: hold_l {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_L";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp L &kp LALT>;
+        };
     };
-
-    hold_semicolon: hold_semicolon {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_SEMICOLON";
-
-        #binding-cells = <0>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-
-        bindings = <&kp SEMI &kp LSFT>;
-    };
-
-    hold_s: hold_s {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_S";
-
-        #binding-cells = <0>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-
-        bindings = <&kp S &kp LALT>;
-    };
-
-    hold_l: hold_l {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOLD_L";
-
-        #binding-cells = <0>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-
-        bindings = <&kp L &kp LALT>;
-    };
-};
-
     keymap {
         compatible = "zmk,keymap";
 
