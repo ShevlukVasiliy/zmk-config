@@ -150,6 +150,16 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &trans  &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp MINUS       &kp EQUAL  &trans  &trans  &kp PIPE  &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDERSCORE  &kp PLUS   &trans  &trans  &trans    &kp TILDE
+                        &trans  &trans  &trans  &trans    &trans  &trans          &trans     &trans
+            >;
+        };
+
         raise_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |       |     |     |      |      |      |                   |      |       |       |      |       |       |
