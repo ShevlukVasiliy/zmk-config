@@ -66,6 +66,16 @@
             bindings = <&kp GREATER_THAN>;
             key-positions = <47 48>;
         };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <21 20>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <19 20>;
+        };
     };
 
     behaviors {
@@ -152,11 +162,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &trans  &trans  &trans                         &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &trans  &trans  &trans                         &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans     &trans  &trans  &hold_semi LS(BACKSLASH) PIPE  &kp BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDERSCORE  &kp EQUAL  &trans  &trans  &trans                         &kp TILDE
-                        &trans  &trans  &trans  &trans    &trans  &trans          &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans                         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &hold_semi LS(BACKSLASH) PIPE  &kp BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans                         &kp TILDE
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
 
